@@ -89,6 +89,85 @@
       color: #555;
       margin-bottom: 20px;
     }
+    /* फॉर्म का बाहरी बॉक्स */
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid #4CAF50;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* लेबल स्टाइल */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+/* इनपुट, सेलेक्ट और टेक्स्ट एरिया स्टाइल */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="password"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* इनपुट फोकस स्टाइल */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px #4CAF50;
+  outline: none;
+}
+
+/* बटन स्टाइल */
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* बटन पर होवर */
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Placeholder टेक्स्ट स्टाइल */
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Responsive (Mobile friendly) */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
   </style>
 </head>
 <body>
